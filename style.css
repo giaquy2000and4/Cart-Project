@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppin', sans-serif;
+}
+body{
+    background-color: #363636;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.product-items{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 12px;
+}
+.product-item{
+    width: 19%;
+    background-color: #fff;
+    padding: 12px;
+    text-align: center;
+}
+.product-item img {
+    width: 100%; /*cho phép ảnh chiếm full chiều ngang của thẻ cha*/
+    margin-bottom: 20px;
+}
+.product-item button{
+    padding: 8px;
+    background-color:#fa75a8;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.product-item button:hover{
+    background-color:#ff0000;
+    color: #fff;
+}
+
+
+
+
+/* -----------------------------cart---------------------- */
+.cart{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.cart tbody tr td:first-child{
+    display: flex;
+    align-items: center;
+}
+.cart tbody tr td:last-child{
+    cursor: pointer;
+}
+.cart img{
+    width: 70px;
+}
+.cart input{
+    width: 30px;
+    outline: none;
+}
+.cart h2{
+    margin-bottom: 30px;
+}
+.cart table{
+    width: 100%;
+}
+.cart table thead tr th:first-child{ /*Nhắm đến phần từ đầu tiên còn các phần tử sau dùng cú pháp nth-child(vị trí phần tử)*/
+    text-align: left;
+}
+.cart table tr td{
+    border-bottom: 3px solid #ddd;
+    padding: 12px 0;
+}
+.price-total p{
+    font-weight: bold;
+}
+.price-total{
+    text-align: right;
+}
+.cart table thead tr th:last-child{ /*Nhắm đến phần từ đầu tiên còn các phần tử sau dùng cú pháp nth-child(vị trí phần tử)*/
+    text-align: right;
+}
+.cart table tbody tr td:last-child{ /*Nhắm đến phần từ đầu tiên còn các phần tử sau dùng cú pháp nth-child(vị trí phần tử)*/
+    text-align: right;
+}
