@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bc044cb271.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Phone Store</title>
 </head>
 <body>
+    <div class="cart-icon">
+        <p><i class="fa-solid fa-cart-shopping"></i><span>0</span><sup>đ</sup></p>
+    </div>
     <section class="product">
         <div class="container">
             <div class="product-items">
@@ -14,7 +18,7 @@
                     <img src="/img/ipad-2022-hero-silver-wifi-select_1.webp">
                     <div class="product-item-text">
                         <h1 style="font-weight: bold; font-size: 20px;">Samsung Galaxy Tab S9</h1>
-                        <p><span>2000000</span><sub>đ</sub></p>
+                        <p><span>2000000</span><sup>đ</sup></p>
                     </div>
                     <button>Add to cart</button>
                 </div>
@@ -22,7 +26,7 @@
                     <img src="/img/mi-pad-6-cps-doc-quyen.webp">
                     <div class="product-item-text">
                         <h1 style="font-weight: bold; font-size: 20px;">Samsung Galaxy Tab S10</h1>
-                        <p><span>3000000</span><sub>đ</sub></p>
+                        <p><span>3000000</span><sup>đ</sup></p>
                     </div>
                     <button>Add to cart</button>
                 </div>
@@ -30,7 +34,7 @@
                     <img src="/img/samsung-tab-s9-xam-2.webp">
                     <div class="product-item-text">
                         <h1 style="font-weight: bold; font-size: 20px;">Xiaomi Pad 6 8GB 128GB</h1>
-                        <p><span>4000000</span><sub>đ</sub></p>
+                        <p><span>4000000</span><sup>đ</sup></p>
                     </div>
                     <button>Add to cart</button>
                 </div>
@@ -38,7 +42,7 @@
                     <img src="/img/tab-s9-ultra-bac-1_1.webp">
                     <div class="product-item-text">
                         <h1 style="font-weight: bold; font-size: 20px;">iPad Air 5 10.9 inch Pro</h1>
-                        <p><span>5000000</span><sub>đ</sub></p>
+                        <p><span>5000000</span><sup>đ</sup></p>
                     </div>
                     <button>Add to cart</button>
                 </div>
@@ -46,15 +50,17 @@
                     <img src="/img/x_mmas.webp">
                     <div class="product-item-text">
                         <h1 style="font-weight: bold; font-size: 20px;">Samsung Galaxy Tab S20</h1>
-                        <p><span>6000000</span><sub>đ</sub></p>
+                        <p><span>6000000</span><sup>đ</sup></p>
                     </div>
                     <button>Add to cart</button>
                 </div>
+                
                 
             </div>
         </div>
     </section>
     <section class="cart">
+        <i class="fa-solid fa-xmark"></i>
         <h2>Cart</h2>
         <form action="">
             <table>
@@ -69,22 +75,23 @@
                 <tbody>
                     <!-- <tr>
                         <td><img src="/img/ipad-2022-hero-silver-wifi-select_1.webp" alt="">Samsung Galaxy Tab S9</td>
-                        <td><p><span>11.900.000</span><sub>đ</sub></p></td>
+                        <td><p><span>11.900.000</span><sup>đ</sup></p></td>
                         <td><input type="number" value="1" min="1"></td>
                         <td>Delete</td>
                     </tr>
                     <tr>
                         <td><img src="/img/mi-pad-6-cps-doc-quyen.webp" alt="">Samsung Galaxy Tab S9</td>
-                        <td><p><span>11.900.000</span><sub>đ</sub></p></td>
+                        <td><p><span>11.900.000</span><sup>đ</sup></p></td>
                         <td><input type="number" value="1" min="1"></td>
                         <td>Delete</td>
                     </tr> -->
                 </tbody>
             </table>
             <div class="price-total">
-                <p>Total amount:<span>0</span><sub>đ</sub></p>
+                <p>Total amount:<span>0</span><sup>đ</sup></p>
             </div>
         </form>
+        <button>Purchase</button>
     </section>
     <script src="script.js"></script>
 </body>

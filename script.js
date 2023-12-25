@@ -20,7 +20,7 @@ function addCart(btnItem,product,productImg,productName,productPrice){
             return
         }
     }
-    var trcontent = '<tr><td><img src="'+productImg+'" alt=""><span class="title">'+productName+'</span></td><td><p><span class="prices">'+productPrice+'</span><sub>đ</sub></p></td><td><input type="number" value="1" min="1"></td><td><span class="delete-cart">Delete</span></td></tr>' 
+    var trcontent = '<tr><td><img src="'+productImg+'" alt=""><span class="title">'+productName+'</span></td><td><p><span class="prices">'+productPrice+'</span><sup>đ</sup></p></td><td><input type="number" value="1" min="1"></td><td><span class="delete-cart">Delete</span></td></tr>' 
     addtr.innerHTML = trcontent
     var cartTable = document.querySelector("tbody")
     cartTable.append(addtr)
@@ -40,7 +40,9 @@ function carttotal(){
         itemPriceTotal = itemPriceTotal + itemMultiple
     }
     var total = document.querySelector(".price-total span")
+    var cartPrice = document.querySelector(".cart-icon span")
     total.innerHTML = itemPriceTotal.toLocaleString('de-DE')
+    cartPrice.innerHTML = itemPriceTotal.toLocaleString('de-DE')
     inputChange()
 
 }
@@ -69,3 +71,12 @@ function inputChange(){
     }
    
 }
+
+const cartbtn = document.querySelector(".fa-xmark")
+const cartshow = document.querySelector(".fa-cart-shopping")
+cartshow.addEventListener("click",function(){
+    document.querySelector(".cart").style.right = "0"
+})
+cartbtn.addEventListener("click",function(){
+    document.querySelector(".cart").style.right = "-100%"
+})

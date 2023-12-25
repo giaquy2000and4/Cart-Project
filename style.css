@@ -33,11 +33,12 @@ body{
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
+    
 }
 .product-item button:hover{
     background-color:#ff0000;
     color: #fff;
+    transition: all 0.3s ease;
 }
 
 
@@ -88,4 +89,51 @@ body{
 }
 .cart table tbody tr td:last-child{ /*Nhắm đến phần từ đầu tiên còn các phần tử sau dùng cú pháp nth-child(vị trí phần tử)*/
     text-align: right;
+}
+/* ---------------cart item---------------------- */
+.cart button{
+    padding: 8px 20px;
+    background-color:#ff0000;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.cart button:hover{
+    background-color:#27fa6e;
+    color: #fff;
+}
+
+.cart{
+    position: fixed;
+    height: 100vh;
+    width: 400px;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+    background-color: #f767f7;
+    padding: 12px 20px;
+    overflow-y: scroll;
+    transition: all 0.4s ease;
+    right: -100%;
+}
+.cart-icon i{
+    cursor: pointer;
+    background-color:#fa75a8;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    padding: 12px 12px;
+
+}
+.cart-icon i:hover{
+    background-color:#27fa6e;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.cart i{
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    font-size: 30px;
 }
